@@ -25,4 +25,5 @@ Now we want to make the API more powerful and user friendly by introducing 3 new
 | Symbol | `Yes << SymbolExchange` | Symbol of the stock you want to buy |
 | Exchange | `Yes << SymbolExchange` | Exchange the symbol belongs to |
 | Quantity | `No` | Amount of shares you want to buy. If omitted, default to 50. |
-| Price | `Yes` | Price of the stock you are willing to pay |
+| OrderClass | `Yes` | The class of the order. One of the following: <br/>**Equity**<br/>**Option**<br/>**ManagedFund** |
+| Price | `Yes if OrderClass="Equity"` | Price of the stock you are willing to pay |
