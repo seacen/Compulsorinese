@@ -1,6 +1,6 @@
 # Getting Started
 
-Getting started with Compulsorinese is incredibly easy. We will begin by showing you an example of Compulsorinese actually in use and demonstrate its syntaxes from there.
+Getting started with Compulsorinese is incredibly easy. We will begin by showing you an example of Compulsorinese in use and demonstrate its syntaxes from there.
 
 ## 4 Simple Fields
 
