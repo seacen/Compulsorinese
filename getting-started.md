@@ -17,13 +17,13 @@ Notice the _Required_ column in the above table, it contains values in Compulsor
 
 ## Spicing Up
 
-Now we want to make the API more powerful and user friendly by introducing 3 new fields: _OrderClass_, _SymbolExchange_ and _Code_.
+Now we want to make the API more powerful and user friendly by introducing 2 new fields: _OrderClass_ and _SymbolExchange_.
 
 What is an order class? Well, we don't want to limit ourselves with just trading equities, we want to expand our business with trading capabilities of warrants, managed funds, options and more. Thus we need a field to tell the API which type of financial instruments are we trading with. 
 
 What is a _SymbolExchange_? From the above table we can draw a conclusion that _Symbol_ and _Exchange_ are interrelated. Thus to make the life easier for API developers, a joint field of the two can be made available so that users can attach both information in one string and assign it to the field. 
 
-The new _Code_ field is simply a substitute of _Symbol_. Some people prefer to use the word "symbol" while others prefer "code". It's OK, we support both. So now the documentation for API fields should look something like this:
+So now the documentation for API fields should look something like this:
 
 | Field Name | Required | Description |
 | :--- | :--- | :--- |
@@ -33,3 +33,4 @@ The new _Code_ field is simply a substitute of _Symbol_. Some people prefer to u
 | Quantity | `No` | Amount of shares you want to buy. If omitted, default to 50. |
 | OrderClass | `Yes` | The class of the order. One of the following: <br/>**Equity**<br/>**Option**<br/>**ManagedFund** |
 | Price | `Yes if OrderClass="Equity"` | Price of the stock you are willing to pay |
+
