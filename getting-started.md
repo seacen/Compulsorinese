@@ -4,7 +4,7 @@ Getting started with Compulsorinese is incredibly easy. We will begin by showing
 
 ## 4 Simple Fields
 
-Say we have a financial API that enable you to buy shares from stock markets, in order to place a buy order in the market, you will of course need to specify the stock _Symbol_ you want to buy, the _Exchange_ this stock belongs to, the _Quantity_ you want to buy and on what _Price_ you want to buy it for. Easy-peasy. Now the API we design have little choices but to expose the following 4 fields:
+Say we have a financial API that enables you to buy shares from stock markets. In order to place a buy order in the market, you will of course need to specify the stock _Symbol_ you want to buy, the _Exchange_ this stock belongs to, the _Quantity_ you want to buy and on what _Price_ you want to buy it for. Easy-peasy. Now the API we design have little choices but to expose the following 4 fields:
 
 | Field Name | Required | Description |
 | :--- | :--- | :--- |
@@ -17,7 +17,5 @@ Notice the _Required_ column in the above table, it contains values in Compulsor
 
 ## Spicing Up
 
-
-
-
+Now we want to make the API more powerful and user friendly by introducing 3 new fields: _OrderType_, _SymbolExchange_ and _Code_.
 
