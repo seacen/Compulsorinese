@@ -1,6 +1,6 @@
 # Compulsorinese
 
-Compulsorinese is a description language for describing fields compulsoriness in an API. Its syntax is designed to be easy to learn and human readable.
+Compulsorinese is a description language for describing fields compulsoriness in an API. The syntax is designed to be human readable and easy to learn.
 
 ## GitBook
 
