@@ -10,8 +10,14 @@ Say we have a financial API that enable you to buy shares from stock markets, in
 | :--- | :--- | :--- |
 | Symbol | `Yes` | Symbol of the stock you want to buy |
 | Exchange | `Yes` | Exchange the symbol belongs to |
-| Quantity | `Yes` | Amount of shares you want to buy |
-| Price | `No` | Price of the stock you are willing to pay |
+| Quantity | `No` | Amount of shares you want to buy. If omitted, default to 50. |
+| Price | `Yes` | Price of the stock you are willing to pay |
 
-Notice the Required column
+Notice the _Required_ column in the above table, it contains values in Compulsorinese. `Yes` and `No` are both built in words in Compulsorinese that convey meanings in exactly what they mean in English: `Yes` is required and `No` is optional \(not required\). Now you have seen the simplest form of the language.
+
+## Spicing Up
+
+
+
+
 
