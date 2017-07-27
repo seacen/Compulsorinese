@@ -38,7 +38,11 @@ Hope the new syntaxes make sense by itself already! If not, well, let's dig into
 
 ### `>>` and `<<`
 
-This are what in Compulsorinese called a _Higher Priority Symbol_ and a _Lower Priority Symbol_. They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required, but can be optional if the fields on the symbol's right are present.
+This are what in Compulsorinese called a _Higher Priority Symbol_ and a _Lower Priority Symbol_. 
+
+They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required in an API request, but can be optional if the fields on the symbol's right are present. 
+
+The major difference between them, can be seen from their names, is the priority relationship they indicate.
 
 
 
