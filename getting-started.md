@@ -34,7 +34,7 @@ So now the documentation for API fields should look something like this:
 | OrderClass | `Yes` | The class of the order. One of the following: <br/>**Equity**<br/>**Option**<br/>**ManagedFund** |
 | Price | `Yes if OrderClass="Equity"` | Price of the stock you are willing to pay |
 
-Hope the new syntaxes make sense by itself already! If not, well, let's dig into it one by one. 
+Hope the new syntaxes make sense by itself already! If not, well, let's dig into the only part that might be new to you. 
 
 ### `>>` and `<<`
 
@@ -46,6 +46,17 @@ The major difference between them, can be seen from their names, is the priority
 
 In most cases, the right-hand fields should be substitutes of the field with a priority symbol.
 
-### `Yes >> (Symbol & Exchange)` and `Yes << SymbolExchange`
+### Compulsorinese to English
 
-These should now be fairly simple to understand. Below are the English text versions of the above Compulsorinese:
+The above syntaxes should now be fairly simple to understand. Below are the English text versions of the above Compulsorinese:
+
+| Compulsorinese | English |
+| :--- | :--- |
+| `Yes >> (Symbol & Exchange)` | The field is always required, but can be omitted if both _Symbol_ and _Exchange_ are present. |
+| `Yes << SymbolExchange` | The field is required, only when _SymbolExchange_ is not present |
+| `Yes if OrderClass="Equity"` | The field is required, only when _OrderClass_ field has been assigned to a value of **Equity** |
+
+
+## Continue the exploration
+
+Now with the basic Compulsorinese understanding equipped in mind, you can start using them in your documentation writing right away! But one should never stop at surface! Go explore the full beauty of the language by diving into the individual sections of this documentation and learn in details of its grammar, its full set of supporting functionalities, and more!
