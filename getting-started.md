@@ -36,6 +36,10 @@ So now the documentation for API fields should look something like this:
 
 Hope the new syntaxes make sense by itself already! If not, well, let's dig into it one by one. 
 
-### `>>`
+### `>>` and `<<`
 
-This is what in Compulsorinese called a _Higher Priority Symbol_. It conveys two meanings. One from the name
+This are what in Compulsorinese called a _Higher Priority Symbol_ and a _Lower Priority Symbol_. They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required, but can be optional if the fields on the symbol's right are present.
+
+
+
+It conveys two meanings. One is that the the field is of higher priority than the fields on the symbol's right. It means that if both the field and the right-hand fields are present in an API request, the value of the field will be used by the API service instead of the values in right-hand fields. In most cases, the right-hand fields should be substitutes of the field. The second meaning it conveys is that the field is required, but can be optional only
