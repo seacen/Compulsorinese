@@ -38,7 +38,7 @@ Hope the new syntaxes make sense by itself already! If not, well, let's dig into
 
 ### `>>` and `<<`
 
-This are, in Compulsorinese land, priority symbols. `>>` is a _Higher Priority Symbol_ and `<<` is a _Lower Priority Symbol_. 
+These are, in Compulsorinese land, priority symbols. `>>` is a _Higher Priority Symbol_ and `<<` is a _Lower Priority Symbol_. 
 
 They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required in an API request, but can be optional if the fields on the symbol's right are present. 
 
