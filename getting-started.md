@@ -45,3 +45,7 @@ They convey one meaning in common, that is the field which has got one of these 
 The major difference between them, can be seen from their names, is the priority relationship they indicate. A field with `>>` has a higher priority than the symbol's right-hand fields. Thus if both the field itself and right-hand fields are present, the field itself will be used by the API service. `<<` on the other hand indicates that the field is of lower priority than the symbol's right-hand fields.
 
 In most cases, the right-hand fields should be substitutes of the field with a priority symbol.
+
+### `Yes >> (Symbol & Exchange)` and `Yes << SymbolExchange`
+
+These should now be fairly simple to understand. Below are the English text versions of the above Compulsorinese:
