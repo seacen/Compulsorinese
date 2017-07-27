@@ -19,7 +19,7 @@ Notice the _Required_ column in the above table, it contains values in Compulsor
 
 Now we want to make the API more powerful and user friendly by introducing 2 new fields: _OrderClass_ and _SymbolExchange_.
 
-What is an order class? Well, we don't want to limit ourselves with just trading equities, we want to expand our business with trading capabilities of warrants, managed funds, options and more. Thus we need a field to tell the API which type of financial instruments we are trading with. 
+What is an order class? Well, we don't want to limit ourselves with just trading equities, we want to expand our business with trading capabilities of warrants, managed funds, options and more. Thus we need a field to tell the API which type of financial instruments we are trading with. Notice that not all types of order classes require a _Price_ to be specified. Managed fund for example requires different set of fields to be filled instead of _Price_.
 
 What is a _SymbolExchange_? From the above table we can draw a conclusion that _Symbol_ and _Exchange_ are interrelated. Thus to make the life easier for API developers, a joint field of the two can be made available so that users can attach both information in one string and assign it to the field. 
 
@@ -38,7 +38,7 @@ Hope the new syntaxes make sense by itself already! If not, well, let's dig into
 
 ### `>>` and `<<`
 
-This are what in Compulsorinese called priority symbols. `>>` is a _Higher Priority Symbol_ and `<<` is a _Lower Priority Symbol_. 
+This are, in Compulsorinese land, priority symbols. `>>` is a _Higher Priority Symbol_ and `<<` is a _Lower Priority Symbol_. 
 
 They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required in an API request, but can be optional if the fields on the symbol's right are present. 
 
