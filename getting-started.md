@@ -38,8 +38,10 @@ Hope the new syntaxes make sense by itself already! If not, well, let's dig into
 
 ### `>>` and `<<`
 
-This are what in Compulsorinese called a _Higher Priority Symbol_ and a _Lower Priority Symbol_. 
+This are what in Compulsorinese called priority symbols. `>>` is a _Higher Priority Symbol_ and `<<` is a _Lower Priority Symbol_. 
 
 They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required in an API request, but can be optional if the fields on the symbol's right are present. 
 
 The major difference between them, can be seen from their names, is the priority relationship they indicate. A field with `>>` has a higher priority than the symbol's right-hand fields. Thus if both the field itself and right-hand fields are present, the field itself will be used by the API service. `<<` on the other hand indicates that the field is of lower priority than the symbol's right-hand fields.
+
+In most cases, the right-hand fields should be substitutes of the field with a priority symbol.
