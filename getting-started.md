@@ -59,4 +59,4 @@ The above syntaxes should now be fairly simple to understand. Below are the Engl
 
 ## Continue the exploration
 
-Now with the basic Compulsorinese understanding equipped in mind, you can start using them in your documentation writing right away! But one should never stop at surface! Go explore the full beauty of the language by diving into the individual sections of this documentation and learn in details of its grammar, its full set of supporting functionalities, and more!
+Now with the basic Compulsorinese understanding equipped in mind, you can start using them in your documentation writing right away! But one should never stop at surface! Go explore the full beauty of the language by diving into the individual sections of this documentation and learn in details of its grammars, its full set of supporting functionalities, and more!
