@@ -42,8 +42,4 @@ This are what in Compulsorinese called a _Higher Priority Symbol_ and a _Lower P
 
 They convey one meaning in common, that is the field which has got one of these symbols in _Required_ column is required in an API request, but can be optional if the fields on the symbol's right are present. 
 
-The major difference between them, can be seen from their names, is the priority relationship they indicate.
-
-
-
-It conveys two meanings. One is that the the field is of higher priority than the fields on the symbol's right. It means that if both the field and the right-hand fields are present in an API request, the value of the field will be used by the API service instead of the values in right-hand fields. In most cases, the right-hand fields should be substitutes of the field. The second meaning it conveys is that the field is required, but can be optional only
+The major difference between them, can be seen from their names, is the priority relationship they indicate. A field with `>>` has a higher priority than the symbol's right-hand fields. Thus if both the field itself and right-hand fields are present, the field itself will be used by the API service. `<<` on the other hand indicates that the field is of lower priority than the symbol's right-hand fields.
