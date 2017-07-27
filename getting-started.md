@@ -19,7 +19,7 @@ Notice the _Required_ column in the above table, it contains values in Compulsor
 
 Now we want to make the API more powerful and user friendly by introducing 2 new fields: _OrderClass_ and _SymbolExchange_.
 
-What is an order class? Well, we don't want to limit ourselves with just trading equities, we want to expand our business with trading capabilities of warrants, managed funds, options and more. Thus we need a field to tell the API which type of financial instruments are we trading with. 
+What is an order class? Well, we don't want to limit ourselves with just trading equities, we want to expand our business with trading capabilities of warrants, managed funds, options and more. Thus we need a field to tell the API which type of financial instruments we are trading with. 
 
 What is a _SymbolExchange_? From the above table we can draw a conclusion that _Symbol_ and _Exchange_ are interrelated. Thus to make the life easier for API developers, a joint field of the two can be made available so that users can attach both information in one string and assign it to the field. 
 
@@ -34,3 +34,8 @@ So now the documentation for API fields should look something like this:
 | OrderClass | `Yes` | The class of the order. One of the following: <br/>**Equity**<br/>**Option**<br/>**ManagedFund** |
 | Price | `Yes if OrderClass="Equity"` | Price of the stock you are willing to pay |
 
+Hope the new syntaxes make sense by itself already! If not, well, let's dig into it one by one. 
+
+### `>>`
+
+This is what in Compulsorinese called a _Higher Priority Symbol_. It conveys two meanings. One from the name
